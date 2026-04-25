@@ -1,13 +1,17 @@
+import Cars.AbstrCar;
 import Cars.BMW;
 import Cars.Merc;
+import Generics.MyCar;
+import Generics.MyCar2;
 
 public class Main {
     public static void main (String[] args) {
-        BMW bmw = new BMW();
-        Merc merc = new Merc();
-        MyCar<BMW> mybmw = new MyCar<>(bmw);
-        MyCar<Merc> mymerc = new MyCar<>(merc);
-        BMW car1 = mybmw.getcar();
-        Merc car2 = mymerc.getcar();
+
+        MyCar<Integer> mycars = new MyCar<>();
+        foo(mycars);
+    }
+    public static void foo (MyCar <Integer> pram) {
+      pram.getcar();
+
     }
 }
