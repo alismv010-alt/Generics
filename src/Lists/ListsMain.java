@@ -16,5 +16,11 @@ public class ListsMain {
         }
 
          */
+        Myarrlist<String> myarr = new Myarrlist<>();
+        myarr.add("Valeh");
+        myarr.add("Vusale");
+        myarr.add("Ali");
+
+        System.out.println(myarr.get(2));
     }
 }
